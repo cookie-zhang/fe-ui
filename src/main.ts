@@ -1,24 +1,21 @@
-import { createApp } from 'vue' // 为了创建vue实列的重要函数
-import App from './App.vue'
-import './index.css'
-import Home from './views/home.vue'
-import Doc from './views/doc.vue'
-import { createWebHashHistory, createRouter } from 'vue-router'
-const history = createWebHashHistory()
-const router = createRouter({
-    history,
-    routes: [
-        {
-            path: '/',
-            component: Home
-        },
-        {
-            path: '/frank2',
-            component: Doc
-        }
-    ]
-})
+/*
+ * @Author: your name
+ * @Date: 2020-08-02 19:56:52
+ * @LastEditTime: 2020-09-22 16:58:14
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /fe-ui/src/main.ts
+ */
+import "./lib/gulu.scss";
+import "./index.scss";
+import { createApp } from "vue";
+import App from "./App.vue";
+import { router } from "./router";
+import './lib/svg.js'
+import 'github-markdown-css'
+import Markdown from './components/Markdown.vue';
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
+app.component("Markdown", Markdown)
