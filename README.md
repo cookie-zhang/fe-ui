@@ -1,9 +1,9 @@
 ## feView 版本1
-[feView](https://blog.cookiezhang.com:8001/feView)
+[feView](https://www.static.cookiezhang.com/feView/#/)
 ## fe-ui
 vue3.0 vite 打造自己的UI库
 
-[fe-ui](https://blog.cookiezhang.com:8001/fe-ui/#/)
+[fe-ui](https://www.static.cookiezhang.com/fe-ui/#/)
 
 npm install 
 npm run dev
